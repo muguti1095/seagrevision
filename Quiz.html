@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quiz Page</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   <style>
+      /* General Styling */
+      body {
+         margin: 0;
+         font-family: 'Poppins', sans-serif;
+         background-color: #1e1e2a;
+         color: #fff;
+      }
+
+      header {
+         background-color: #333;
+         padding: 15px 20px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      header .logo {
+         font-size: 1.5rem;
+         color: #ff6b81;
+         text-decoration: none;
+         font-weight: bold;
+      }
+
+      .quiz-container {
+         max-width: 800px;
+         margin: 40px auto;
+         background: #28283d;
+         padding: 20px;
+         border-radius: 10px;
+         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .quiz-header {
+         text-align: center;
+         margin-bottom: 20px;
+      }
+
+      .quiz-header h1 {
+         font-size: 2rem;
+         color: #ff6b81;
+         text-transform: uppercase;
+      }
+
+      .question {
+         font-size: 1.2rem;
+         font-weight: bold;
+         margin: 20px 0;
+      }
+
+      .answers {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 15px;
+      }
+
+      .answers button {
+         background-color: #444;
+         color: #fff;
+         border: none;
+         padding: 15px;
+         font-size: 1rem;
+         border-radius: 5px;
+         cursor: pointer;
+         transition: background-color 0.3s;
+      }
+
+      .answers button:hover {
+         background-color: #ff6b81;
+      }
+
+      .result {
+         text-align: center;
+         margin-top: 20px;
+         font-size: 1.5rem;
+         color: #6cdbeb;
+      }
+
+      footer {
+         margin-top: 40px;
+         text-align: center;
+         color: #666;
+         font-size: 0.9rem;
+      }
+
+      footer span {
+         color: #ff6b81;
+         font-weight: bold;
+      }
+   </style>
+</head>
+<body>
+
+<header>
+   <a href="home.html" class="logo">SEAG Revision.</a>
+</header>
+
+<div class="quiz-container">
+   <div class="quiz-header">
+      <h1>Math Quiz</h1>
+   </div>
+   <div class="quiz-body">
+      <p class="question" id="question">Loading question...</p>
+      <div class="answers" id="answers">
+         <!-- Buttons will be dynamically added here -->
+      </div>
+      <div class="result" id="result"></div>
+   </div>
+</div>
+
+<footer>
+   &copy; 2022 by <span>SEAG Revision</span> | All rights reserved.
+</footer>
+
+<script src="JavaScript/quiz.js"></script>
+
+</body>
+</html>
